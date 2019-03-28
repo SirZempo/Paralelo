@@ -1,3 +1,12 @@
+/**
+ * @file Color.hpp
+ * @author Christopher Trevilla
+ * @version 0.1
+ * @date 2019-03-27
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #include <iostream>
 
 using namespace std;
