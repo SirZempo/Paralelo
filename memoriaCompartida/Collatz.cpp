@@ -21,7 +21,7 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/core.hpp>
 
-#include "../Color.cpp"
+#include "../lib/Color.hpp"
 
 using namespace std;
 
