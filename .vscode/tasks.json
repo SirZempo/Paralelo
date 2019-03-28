@@ -4,74 +4,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build Cpp OpenCv",
+            "label": "echo",
             "type": "shell",
-            "command": "g++",
-            "args": [
-                "-ggdb",
-                "${relativeFile}",
-                "-o",
-                "${fileBasenameNoExtension}",
-                "`",
-                "pkg-config",
-                "--cflags",
-                "--libs",
-                "opencv",
-                "`",
-                "&&",
-                "./${fileBasenameNoExtension}"
-            ],
-            "group": "build",
-            "presentation": {},
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "Build Cpp",
-            "type": "shell",
-            "command": "g++",
-            "args": [
-                "${relativeFile}",
-                "&&",
-                "time",
-                "./a.out"
-            ],
-            "group": "build",
-            "presentation": {},
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "type": "shell",
-            "label": "cpp build active file",
-            "command": "/usr/bin/cpp",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "options": {
-                "cwd": "/usr/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ]
-        },
-        {
-            "type": "shell",
-            "label": "gcc build active file",
-            "command": "/usr/bin/gcc",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "options": {
-                "cwd": "/usr/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ]
+            "command": "echo Hello"
         }
     ]
 }
